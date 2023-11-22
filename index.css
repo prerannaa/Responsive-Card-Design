@@ -1,0 +1,214 @@
+/* *{
+    background-color: #343D33;
+}
+
+.main{
+    margin-top: 70px;
+    margin-left: 160px;
+    margin-bottom: 70px;
+}
+
+.flex1{
+    display: flex;
+}
+
+
+.flex2{
+    width: 1040px;
+    height: 409px;
+    margin-top: 35px;
+    display: block;
+}
+
+
+.text{
+    color: white;  
+    padding-left: 90px;
+    padding-bottom: 10px;
+    font-family: 'Libre Baskerville';
+    font-size: 17px;
+    justify-content: space-evenly;
+    width: 430px;
+    height: 350px;
+}
+
+#button{
+    border-width: 2px;
+    border-color: white;
+    width: 150px;
+    height: 35px;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+#plant{
+    width: 534px;
+    height: 354px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .main{
+        margin: 100px 100px 100px 100px;
+    }
+
+    .flex1{
+        flex-direction: column-reverse;
+    }
+
+    .text{
+        text-align: left;
+    }
+
+    #plant{
+        width:800px;
+        height:400px;
+    }
+
+    #seating{
+        width: 800px;
+        height: 300px;
+    }
+} */
+
+
+* {
+    background-color: #343D33;
+}
+
+.main {
+    margin-top: 70px;
+    margin-left: 200px;
+    margin-bottom: 70px;
+}
+
+.flex1 {
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1 {
+    order: 1; 
+    padding-bottom: 35px;
+    padding-right: 0px;
+}
+
+.flex2 {
+    flex: 1; 
+    order: 3; 
+}
+
+#plant{
+    width: 534px;
+    height: auto;
+}
+
+#seating{
+    width: 1100px;
+    height: 409px;
+}
+
+
+
+.text {
+    flex: 1; 
+    color: white;
+    padding-left: 75px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+    font-family: 'Libre Baskerville';
+    font-size: 17px;
+    max-width: 600px;
+    width: auto;
+    order: 2; 
+}
+
+a {
+    border-width: 4px;
+    border-color: white;
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.border-box {
+    border: 3px solid #ffffff; 
+    padding: 15px; 
+    display: inline-block; 
+    text-decoration: none; 
+  }
+
+
+h1 {
+    font-size: 45px;
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        margin-top: 20px;
+        margin-right: auto;   
+        margin-left: auto; 
+    }
+
+    .flex1 {
+        flex-direction: column;
+    }
+
+    #plant{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 900px; 
+        height: 400px;
+    }
+
+    #seating {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 900px;
+        height: 300px;
+    }
+
+    .text{
+        width: 450px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .container1, .text, .flex2 {
+        padding-right: 0px;
+        order: 0; 
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .main {
+        margin-top: 20px;
+        margin-left: auto; 
+    }
+
+    #plant,
+    #seating {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .text {
+        width: 100%; 
+        padding: 10px; 
+        box-sizing: border-box; 
+        text-align: center; 
+    }
+}
+
+
+
+
